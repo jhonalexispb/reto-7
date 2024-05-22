@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    .font-raleway-400 {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .font-raleway-700 {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Click Me
-  </button>
-  Features
-  Team
-  Sign In
+<body class="h-lvh flex flex-col md:flex-row m-auto"">
+  <header class=" flex justify-between w-11/12 mx-auto mt-5 ">
+  <img width="100px" src="/images/logo.svg" alt="logo" />
+  <nav class="flex">
+    <ul class="flex gap-7 content-center">
+      <li><a  class="font-raleway-400 text-[#585989]" href="#">Features</a></li>
+      <li><a class="font-raleway-400 text-[#585989]" href="#">Team</a></li>
+      <li><a class="font-raleway-400 text-[#585989]" href="#">Sign In</a></li>
+    </ul>
+  </nav>
+  </header>
 
   All your files in one secure location, accessible anywhere.
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
+  Fylo stores your most important files in one secure location.
+  Access them wherever you need, share and collaborate with friends,
   family, and co-workers.
 
   Get Started
 
   Stay productive, wherever you are
 
-  Never let location be an issue when accessing your files. Fylo has you 
+  Never let location be an issue when accessing your files. Fylo has you
   covered for all of your file storage needs.
 
-  Securely share files and folders with friends, family and colleagues for 
+  Securely share files and folders with friends, family and colleagues for
   live collaboration. No email attachments required!
 
   See how Fylo works
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
+  Fylo has improved our team productivity by an order of magnitude. Since
   making the switch our team has become a well-oiled collaboration machine.
 
   Kyle Burton
@@ -50,7 +64,7 @@
 
   Get early access today
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  It only takes a minute to sign up and our free starter tier is extremely generous.
   If you have any questions, our support team would be happy to help you.
 
   Get Started For Free
@@ -68,10 +82,7 @@
   Privacy
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
 </body>
+
 </html>
